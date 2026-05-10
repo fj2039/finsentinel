@@ -27,4 +27,4 @@ FinSentinel is a financial sentiment classification and market signal pipeline. 
 | **FinBERT+LoRA** | **98.5%** | **0.978** | **~50ms** | **Free** |
 | DistilBERT student | 78.4% | 0.539 | ~10ms | Free |
 
-> Note: All models drop hard on FiQA (accuracy ~10%). Good FPB results do not transfer to informal microblog financial text.
+> Note: All models drop hard on FiQA (accuracy ~10%). 
