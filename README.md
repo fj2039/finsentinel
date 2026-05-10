@@ -27,4 +27,25 @@ FinSentinel is a financial sentiment classification and market signal pipeline. 
 | **FinBERT+LoRA** | **98.5%** | **0.978** | **~50ms** | **Free** |
 | DistilBERT student | 78.4% | 0.539 | ~10ms | Free |
 
-> Note: All models drop hard on FiQA (accuracy ~10%). 
+> Note: All models drop hard on FiQA (accuracy ~10%).
+
+## Pipeline Overview
+
+| Tier | Model | Macro F1 |
+|---|---|---|
+| 0 | Majority baseline | 0.340 |
+| 1 | TF-IDF + Logistic Regression | 0.868 |
+| 2A | FinBERT zero-shot | 0.963 |
+| 2B | FinBERT + LoRA | **0.978** |
+| 3 | GPT-4o-mini (zero/few/CoT/RAG+CoT) | 0.828-0.978 |
+| 4 | LangChain ReAct Agent | 0.260 |
+| 5 | DistilBERT student (distillation) | 0.539 |
+
+
+## Dataset
+
+We used the **Financial PhraseBank (AllAgree subset)** - 2,264 financial sentences from OMX Helsinki news, annotated by 16 finance professionals from a retail investor's perspective. Labels are positive, neutral, and negative. The dataset has a class imbalance (61.4% neutral) so we used macro F1 as our main metric.
+
+For cross-domain testing we used **FiQA-Sentiment**, which is Twitter/Stocktwits financial microblogs. Results were not great (see above) but that's an honest finding.
+
+---
