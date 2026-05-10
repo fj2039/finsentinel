@@ -49,3 +49,33 @@ We used the **Financial PhraseBank (AllAgree subset)** - 2,264 financial sentenc
 For cross-domain testing we used **FiQA-Sentiment**, which is Twitter/Stocktwits financial microblogs. Results were not great (see above) but that's an honest finding.
 
 ---
+
+## Setup
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/rn2357-cloud/financial-sentiment-analysis
+cd financial-sentiment-analysis
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 3. Set your OpenAI API key
+
+```bash
+export OPENAI_API_KEY="your-key-here"
+```
+
+Or if you're deploying on Streamlit Cloud, add it to your secrets:
+```toml
+# .streamlit/secrets.toml
+OPENAI_API_KEY = "your-key-here"
+```
+
+The app works without an API key using keyword-based fallback. FinBERT+LoRA inference is completely free.
+
+---
