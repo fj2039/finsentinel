@@ -116,5 +116,31 @@ The app classifies each headline and returns sentiment, risk type, severity, mar
 
 ---
 
+## Stats
+
+| Comparison | Test | p-value |
+|---|---|---|
+| Zero-shot vs few-shot | McNemar (n=200) | p < 0.001 |
+| Few-shot vs CoT | McNemar (n=200) | p = 0.109 |
+
+Of 29 disagreements between zero-shot and few-shot, few-shot fixed 27 of them and only introduced 2 new errors.
+
+---
+
+## Future Work
+
+- Domain adaptation on noisy text like FiQA and Twitter/Stocktwits
+- Bigger distillation dataset 
+- Live RSS sentiment-price dashboard
+- Better class balancing for negative sentiment
+
+---
+
+## References
+
+- Yang et al. (2020). FinBERT: A Pretrained Language Model for Financial Communications. arXiv:2006.08097
+- Deng et al. (2023). What do LLMs Know about Financial Markets? ACM Web Conference.
+- Vijayan (2023). A Prompt Engineering Approach for Structured Data Extraction from Unstructured Text Using Conversational LLMs. ACAI 2023.
+- Malo et al. (2014). Good Debt or Bad Debt: Detecting Semantic Orientations in Economic Texts. JASIST.
 
 
