@@ -79,3 +79,25 @@ OPENAI_API_KEY = "your-key-here"
 The app works without an API key using keyword-based fallback. FinBERT+LoRA inference is completely free.
 
 ---
+
+## Running the Notebook
+
+Open `notebooks/FinSentinel.ipynb` in Google Colab or Jupyter. Put `Sentences_AllAgree.txt` in the working directory before running. The notebook goes through all 6 tiers in order.
+
+---
+
+## Running the App
+
+```bash
+streamlit run finsentinel_v3.py
+```
+
+You can input headlines four ways:
+- Live Yahoo Finance headlines by ticker (AAPL, MSFT, NVDA, etc.)
+- Paste your own headlines
+- Load FiQA directly from HuggingFace
+- Upload Sentences_AllAgree.txt for evaluation with ground truth labels
+
+The app classifies each headline and returns sentiment, risk type, severity, market impact, time horizon, confidence, and reasoning. It also aggregates daily sentiment scores per ticker and correlates them against actual stock returns via yfinance.
+
+---
