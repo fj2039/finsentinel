@@ -101,3 +101,20 @@ You can input headlines four ways:
 The app classifies each headline and returns sentiment, risk type, severity, market impact, time horizon, confidence, and reasoning. It also aggregates daily sentiment scores per ticker and correlates them against actual stock returns via yfinance.
 
 ---
+
+## Key Findings
+
+**Domain beats scale.** FinBERT zero-shot (0.963) beats GPT-4o-mini zero-shot (0.828) even though its 70x smaller. Financial domain pretraining matters a lot more than model size here.
+
+**Few-shot is the biggest lever.** 6 labeled examples boosted macro F1 from 0.828 to 0.978 (p<0.001, McNemar). The examples teach the model to think from a retail investor perspective instead of just picking up on surface words like "sales" or "revenue."
+
+**CoT backfired a little.** CoT (0.941) actually did worse than few-shot (0.978). It made the model too conservative and biased toward neutral predictions. The difference was not statistically significant (p=0.109).
+
+**FinBERT+LoRA is the practical winner.** Same F1 as GPT-4o-mini few-shot, zero API cost, 50ms latency, and only 0.27% of parameters trained. Easy choice for deployment.
+
+**Real-world gap is real.** FPB accuracy (98.5%) collapses to about 10% on FiQA. Clean benchmark performance does not mean the model works on messy real-world text.
+
+---
+
+
+
