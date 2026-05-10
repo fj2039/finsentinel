@@ -1,6 +1,7 @@
 # FinSentinel: Financial Risk Intelligence
 
 **DS-UA 301 - Advanced Topics in Data Science · NYU · Spring 2026**
+
 Dori Fu · Rhea Nayar · Fatema Jaynab
 
 ---
