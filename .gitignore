@@ -1,0 +1,38 @@
+# API keys & secrets
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Mac
+.DS_Store
+
+# Model weights & checkpoints (too large for GitHub)
+*.bin
+*.pt
+*.pth
+*.safetensors
+checkpoint-*/
+runs/
+
+# Data (if too large)
+*.parquet
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+*.tmp
