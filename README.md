@@ -124,9 +124,6 @@ Four ways to feed it headlines:
 
 For each headline the app returns sentiment, risk type, severity, market impact, time horizon, confidence, and reasoning. It aggregates daily sentiment per ticker and correlates it against actual stock returns via yfinance.
 
-## A note on API keys
-
-Never print your key in a notebook cell. A `userdata.get()` call whose value gets echoed is saved into the notebook's output and committed along with everything else. One cell output in `fpb_prompting.ipynb` has been redacted here for exactly that reason.
 
 ## Future work
 
