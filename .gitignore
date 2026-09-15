@@ -1,38 +1,40 @@
-# API keys & secrets
+# Data — not redistributed, see README
+*.csv
+*.tsv
+Sentences_*.txt
+data/
+datasets/
+
+# Model artifacts
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+Saved Models/
+*-checkpoint/
+
+# Secrets
 .env
-.streamlit/secrets.toml
+.env.*
+*.key
+secrets.json
+credentials.json
 
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-.Python
-env/
-venv/
 .venv/
-
-# Jupyter
+venv/
+env/
+*.egg-info/
 .ipynb_checkpoints/
-*.ipynb_checkpoints
 
-# Mac
+# OS / editor
 .DS_Store
-
-# Model weights & checkpoints (too large for GitHub)
-*.bin
-*.pt
-*.pth
-*.safetensors
-checkpoint-*/
-runs/
-
-# Data (if too large)
-*.parquet
-
-# IDE
+Thumbs.db
 .vscode/
 .idea/
 
-# Misc
-*.log
-*.tmp
+# Streamlit secrets
+.streamlit/secrets.toml

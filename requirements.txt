@@ -1,24 +1,37 @@
-streamlit
-openai
-rank-bm25
-scikit-learn
-feedparser
-datasets
-yfinance
-scipy
-plotly
-transformers
-peft
-torch
-accelerate
-bitsandbytes
-faiss-cpu
-statsmodels
-pandas
+# Core
 numpy
+pandas
+scikit-learn
+scipy
+statsmodels
 matplotlib
 seaborn
+plotly
+tqdm
+
+# Transformers / PEFT
+torch
+transformers
+datasets
+peft
+accelerate
+bitsandbytes
+
+# LLM + agent
+openai
 langchain==0.1.20
 langchain-openai
 langchain-community
-tqdm
+langchain-core
+
+# Retrieval
+faiss-cpu
+rank-bm25
+
+# News + market data
+feedparser
+yfinance
+pandas-market-calendars
+
+# App
+streamlit
