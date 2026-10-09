@@ -90,8 +90,8 @@ docs/                        Milestone reports and final presentation
 ## Setup
 
 ```bash
-git clone https://github.com/fj2039/financial-sentiment-analysis
-cd financial-sentiment-analysis
+git clone https://github.com/fj2039/finsentinel
+cd finsentinel
 pip install -r requirements.txt
 export OPENAI_API_KEY="your-key-here"
 ```
@@ -138,3 +138,7 @@ For each headline the app returns sentiment, risk type, severity, market impact,
 - Deng et al. (2023). What do LLMs Know about Financial Markets? ACM Web Conference.
 - Vijayan (2023). A Prompt Engineering Approach for Structured Data Extraction from Unstructured Text Using Conversational LLMs. ACAI 2023.
 - Malo et al. (2014). Good Debt or Bad Debt: Detecting Semantic Orientations in Economic Texts. JASIST.
+
+## Contributions
+
+Fatema ran the prompting experiments (zero-shot, few-shot, CoT, RAG + CoT), the DistilBERT distillation, and the McNemar significance testing, and wrote the methodology. Rhea set up the repository and the dataset work. Dori wrote the motivation and related work, and built the Streamlit app in `src/`.
