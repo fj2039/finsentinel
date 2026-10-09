@@ -141,4 +141,4 @@ For each headline the app returns sentiment, risk type, severity, market impact,
 
 ## Contributions
 
-Fatema ran the prompting experiments (zero-shot, few-shot, CoT, RAG + CoT), the DistilBERT distillation, and the McNemar significance testing, and wrote the methodology. Rhea designed the six-tier benchmark, built the FinBERT + LoRA fine-tune, and did the repository setup and dataset work. Dori wrote the motivation and related work, and built the Streamlit app in `src/`.
+Fatema ran the prompting experiments (zero-shot, few-shot, CoT, RAG + CoT), the DistilBERT distillation, and the McNemar significance testing, and wrote the methodology. Rhea designed the six-tier benchmark, built the FinBERT + LoRA fine-tune and the LangChain ReAct agent, and did the repository setup and dataset work. Dori wrote the motivation and related work, and built the Streamlit app in `src/`.
